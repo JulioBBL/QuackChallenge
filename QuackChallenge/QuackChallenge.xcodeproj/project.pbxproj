@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5933A70D2045C25B00A8050C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933A70C2045C25B00A8050C /* AppDelegate.swift */; };
+		5933A70F2045C25B00A8050C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 5933A70E2045C25B00A8050C /* art.scnassets */; };
+		5933A7112045C25B00A8050C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933A7102045C25B00A8050C /* ViewController.swift */; };
+		5933A7142045C25B00A8050C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5933A7122045C25B00A8050C /* Main.storyboard */; };
+		5933A7162045C25B00A8050C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5933A7152045C25B00A8050C /* Assets.xcassets */; };
+		5933A7192045C25B00A8050C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5933A7172045C25B00A8050C /* LaunchScreen.storyboard */; };
+		5933A7242045C25B00A8050C /* QuackChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933A7232045C25B00A8050C /* QuackChallengeTests.swift */; };
+		5933A72F2045C25B00A8050C /* QuackChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933A72E2045C25B00A8050C /* QuackChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5933A7202045C25B00A8050C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5933A7012045C25A00A8050C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5933A7082045C25B00A8050C;
+			remoteInfo = QuackChallenge;
+		};
+		5933A72B2045C25B00A8050C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5933A7012045C25A00A8050C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5933A7082045C25B00A8050C;
+			remoteInfo = QuackChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5933A7092045C25B00A8050C /* QuackChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuackChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5933A70C2045C25B00A8050C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5933A70E2045C25B00A8050C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		5933A7102045C25B00A8050C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5933A7132045C25B00A8050C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5933A7152045C25B00A8050C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5933A7182045C25B00A8050C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5933A71A2045C25B00A8050C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5933A71F2045C25B00A8050C /* QuackChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuackChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5933A7232045C25B00A8050C /* QuackChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuackChallengeTests.swift; sourceTree = "<group>"; };
+		5933A7252045C25B00A8050C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5933A72A2045C25B00A8050C /* QuackChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuackChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5933A72E2045C25B00A8050C /* QuackChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuackChallengeUITests.swift; sourceTree = "<group>"; };
+		5933A7302045C25B00A8050C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5933A7062045C25B00A8050C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5933A71C2045C25B00A8050C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5933A7272045C25B00A8050C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5933A7002045C25A00A8050C = {
+			isa = PBXGroup;
+			children = (
+				5933A70B2045C25B00A8050C /* QuackChallenge */,
+				5933A7222045C25B00A8050C /* QuackChallengeTests */,
+				5933A72D2045C25B00A8050C /* QuackChallengeUITests */,
+				5933A70A2045C25B00A8050C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5933A70A2045C25B00A8050C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5933A7092045C25B00A8050C /* QuackChallenge.app */,
+				5933A71F2045C25B00A8050C /* QuackChallengeTests.xctest */,
+				5933A72A2045C25B00A8050C /* QuackChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5933A70B2045C25B00A8050C /* QuackChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				5933A70C2045C25B00A8050C /* AppDelegate.swift */,
+				5933A70E2045C25B00A8050C /* art.scnassets */,
+				5933A7102045C25B00A8050C /* ViewController.swift */,
+				5933A7122045C25B00A8050C /* Main.storyboard */,
+				5933A7152045C25B00A8050C /* Assets.xcassets */,
+				5933A7172045C25B00A8050C /* LaunchScreen.storyboard */,
+				5933A71A2045C25B00A8050C /* Info.plist */,
+			);
+			path = QuackChallenge;
+			sourceTree = "<group>";
+		};
+		5933A7222045C25B00A8050C /* QuackChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5933A7232045C25B00A8050C /* QuackChallengeTests.swift */,
+				5933A7252045C25B00A8050C /* Info.plist */,
+			);
+			path = QuackChallengeTests;
+			sourceTree = "<group>";
+		};
+		5933A72D2045C25B00A8050C /* QuackChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5933A72E2045C25B00A8050C /* QuackChallengeUITests.swift */,
+				5933A7302045C25B00A8050C /* Info.plist */,
+			);
+			path = QuackChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5933A7082045C25B00A8050C /* QuackChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5933A7332045C25B00A8050C /* Build configuration list for PBXNativeTarget "QuackChallenge" */;
+			buildPhases = (
+				5933A7052045C25B00A8050C /* Sources */,
+				5933A7062045C25B00A8050C /* Frameworks */,
+				5933A7072045C25B00A8050C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuackChallenge;
+			productName = QuackChallenge;
+			productReference = 5933A7092045C25B00A8050C /* QuackChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5933A71E2045C25B00A8050C /* QuackChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5933A7362045C25B00A8050C /* Build configuration list for PBXNativeTarget "QuackChallengeTests" */;
+			buildPhases = (
+				5933A71B2045C25B00A8050C /* Sources */,
+				5933A71C2045C25B00A8050C /* Frameworks */,
+				5933A71D2045C25B00A8050C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5933A7212045C25B00A8050C /* PBXTargetDependency */,
+			);
+			name = QuackChallengeTests;
+			productName = QuackChallengeTests;
+			productReference = 5933A71F2045C25B00A8050C /* QuackChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5933A7292045C25B00A8050C /* QuackChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5933A7392045C25B00A8050C /* Build configuration list for PBXNativeTarget "QuackChallengeUITests" */;
+			buildPhases = (
+				5933A7262045C25B00A8050C /* Sources */,
+				5933A7272045C25B00A8050C /* Frameworks */,
+				5933A7282045C25B00A8050C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5933A72C2045C25B00A8050C /* PBXTargetDependency */,
+			);
+			name = QuackChallengeUITests;
+			productName = QuackChallengeUITests;
+			productReference = 5933A72A2045C25B00A8050C /* QuackChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5933A7012045C25A00A8050C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Julio Brazil";
+				TargetAttributes = {
+					5933A7082045C25B00A8050C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5933A71E2045C25B00A8050C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5933A7082045C25B00A8050C;
+					};
+					5933A7292045C25B00A8050C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5933A7082045C25B00A8050C;
+					};
+				};
+			};
+			buildConfigurationList = 5933A7042045C25A00A8050C /* Build configuration list for PBXProject "QuackChallenge" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5933A7002045C25A00A8050C;
+			productRefGroup = 5933A70A2045C25B00A8050C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5933A7082045C25B00A8050C /* QuackChallenge */,
+				5933A71E2045C25B00A8050C /* QuackChallengeTests */,
+				5933A7292045C25B00A8050C /* QuackChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5933A7072045C25B00A8050C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5933A70F2045C25B00A8050C /* art.scnassets in Resources */,
+				5933A7192045C25B00A8050C /* LaunchScreen.storyboard in Resources */,
+				5933A7162045C25B00A8050C /* Assets.xcassets in Resources */,
+				5933A7142045C25B00A8050C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5933A71D2045C25B00A8050C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5933A7282045C25B00A8050C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5933A7052045C25B00A8050C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5933A7112045C25B00A8050C /* ViewController.swift in Sources */,
+				5933A70D2045C25B00A8050C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5933A71B2045C25B00A8050C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5933A7242045C25B00A8050C /* QuackChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5933A7262045C25B00A8050C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5933A72F2045C25B00A8050C /* QuackChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5933A7212045C25B00A8050C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5933A7082045C25B00A8050C /* QuackChallenge */;
+			targetProxy = 5933A7202045C25B00A8050C /* PBXContainerItemProxy */;
+		};
+		5933A72C2045C25B00A8050C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5933A7082045C25B00A8050C /* QuackChallenge */;
+			targetProxy = 5933A72B2045C25B00A8050C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5933A7122045C25B00A8050C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5933A7132045C25B00A8050C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5933A7172045C25B00A8050C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5933A7182045C25B00A8050C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5933A7312045C25B00A8050C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5933A7322045C25B00A8050C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5933A7342045C25B00A8050C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 524D3B9S8F;
+				INFOPLIST_FILE = QuackChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mackmobile.Brazil.Julio.QuackChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5933A7352045C25B00A8050C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 524D3B9S8F;
+				INFOPLIST_FILE = QuackChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mackmobile.Brazil.Julio.QuackChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5933A7372045C25B00A8050C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 524D3B9S8F;
+				INFOPLIST_FILE = QuackChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mackmobile.Brazil.Julio.QuackChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuackChallenge.app/QuackChallenge";
+			};
+			name = Debug;
+		};
+		5933A7382045C25B00A8050C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 524D3B9S8F;
+				INFOPLIST_FILE = QuackChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mackmobile.Brazil.Julio.QuackChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuackChallenge.app/QuackChallenge";
+			};
+			name = Release;
+		};
+		5933A73A2045C25B00A8050C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 524D3B9S8F;
+				INFOPLIST_FILE = QuackChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mackmobile.Brazil.Julio.QuackChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuackChallenge;
+			};
+			name = Debug;
+		};
+		5933A73B2045C25B00A8050C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 524D3B9S8F;
+				INFOPLIST_FILE = QuackChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mackmobile.Brazil.Julio.QuackChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuackChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5933A7042045C25A00A8050C /* Build configuration list for PBXProject "QuackChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5933A7312045C25B00A8050C /* Debug */,
+				5933A7322045C25B00A8050C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5933A7332045C25B00A8050C /* Build configuration list for PBXNativeTarget "QuackChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5933A7342045C25B00A8050C /* Debug */,
+				5933A7352045C25B00A8050C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5933A7362045C25B00A8050C /* Build configuration list for PBXNativeTarget "QuackChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5933A7372045C25B00A8050C /* Debug */,
+				5933A7382045C25B00A8050C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5933A7392045C25B00A8050C /* Build configuration list for PBXNativeTarget "QuackChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5933A73A2045C25B00A8050C /* Debug */,
+				5933A73B2045C25B00A8050C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5933A7012045C25A00A8050C /* Project object */;
+}
