@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5905A7FF2047167B0098FD6F /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5905A7FE2047167B0098FD6F /* Plane.swift */; };
+		5905A80120474EBA0098FD6F /* quack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5905A80020474EBA0098FD6F /* quack.mp3 */; };
 		5933A70D2045C25B00A8050C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933A70C2045C25B00A8050C /* AppDelegate.swift */; };
 		5933A70F2045C25B00A8050C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 5933A70E2045C25B00A8050C /* art.scnassets */; };
 		5933A7112045C25B00A8050C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933A7102045C25B00A8050C /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5905A7FE2047167B0098FD6F /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		5905A80020474EBA0098FD6F /* quack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quack.mp3; sourceTree = "<group>"; };
 		5933A7092045C25B00A8050C /* QuackChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuackChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5933A70C2045C25B00A8050C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5933A70E2045C25B00A8050C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -102,7 +106,9 @@
 				5933A70C2045C25B00A8050C /* AppDelegate.swift */,
 				5933A70E2045C25B00A8050C /* art.scnassets */,
 				5933A7102045C25B00A8050C /* ViewController.swift */,
+				5905A7FE2047167B0098FD6F /* Plane.swift */,
 				5933A7122045C25B00A8050C /* Main.storyboard */,
+				5905A80020474EBA0098FD6F /* quack.mp3 */,
 				5933A7152045C25B00A8050C /* Assets.xcassets */,
 				5933A7172045C25B00A8050C /* LaunchScreen.storyboard */,
 				5933A71A2045C25B00A8050C /* Info.plist */,
@@ -236,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5933A70F2045C25B00A8050C /* art.scnassets in Resources */,
+				5905A80120474EBA0098FD6F /* quack.mp3 in Resources */,
 				5933A7192045C25B00A8050C /* LaunchScreen.storyboard in Resources */,
 				5933A7162045C25B00A8050C /* Assets.xcassets in Resources */,
 				5933A7142045C25B00A8050C /* Main.storyboard in Resources */,
@@ -264,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5933A7112045C25B00A8050C /* ViewController.swift in Sources */,
+				5905A7FF2047167B0098FD6F /* Plane.swift in Sources */,
 				5933A70D2045C25B00A8050C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

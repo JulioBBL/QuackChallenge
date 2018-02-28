@@ -21,8 +21,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         
         // Show debug info such as fps and timing information
-        sceneView.showsStatistics = true
-        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+//        sceneView.showsStatistics = true
+//        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, SCNDebugOptions.showPhysicsShapes, SCNDebugOptions.showBoundingBoxes]
         
         // Create a new scene
         let scene = SCNScene(named: "art.scnassets/ship.scn")!
@@ -66,38 +66,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
         
-        let width = CGFloat(planeAnchor.extent.x)
-        let height = CGFloat(planeAnchor.extent.z)
-        let plane = SCNPlane(width: width, height: height)
-        
-        plane.materials.first?.diffuse.contents = UIColor.blue
-        
-        let planeNode = SCNNode(geometry: plane)
-        
-        let x = CGFloat(planeAnchor.center.x)
-        let y = CGFloat(planeAnchor.center.y)
-        let z = CGFloat(planeAnchor.center.z)
-        planeNode.position = SCNVector3(x,y,z)
-        planeNode.eulerAngles.x = -.pi / 2
+        let planeNode = Plane(with: planeAnchor)
         
         node.addChildNode(planeNode)
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
-        guard let planeAnchor = anchor as?  ARPlaneAnchor,
-            let planeNode = node.childNodes.first,
-            let plane = planeNode.geometry as? SCNPlane
-            else { return }
+        guard let planeAnchor = anchor as?  ARPlaneAnchor, let planeNode = node.childNodes.first as? Plane else { return }
         
-        let width = CGFloat(planeAnchor.extent.x)
-        let height = CGFloat(planeAnchor.extent.z)
-        plane.width = width
-        plane.height = height
-        
-        let x = CGFloat(planeAnchor.center.x)
-        let y = CGFloat(planeAnchor.center.y)
-        let z = CGFloat(planeAnchor.center.z)
-        planeNode.position = SCNVector3(x, y, z)
+        planeNode.update(with: planeAnchor)
     }
     
     // Override to create and configure nodes for anchors added to the view's session.
@@ -134,14 +111,31 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         guard let hitTestResult = hitTestResults.first else { return }
         let translation = hitTestResult.worldTransform.translation
         let x = translation.x
-        let y = translation.y
-        let z = translation.z + 10
+        let y = translation.y + 1
+        let z = translation.z
         
         guard let duckScene = SCNScene(named: "art.scnassets/motherDucker.scn"), let duckNode = duckScene.rootNode.childNode(withName: "duck", recursively: false) else { return }
         
-        duckNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
+        duckNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: SCNPhysicsShape(node: duckNode, options: [SCNPhysicsShape.Option.scale : duckNode.scale]))
+//        duckNode.physicsBody.
         duckNode.position = SCNVector3(x,y,z)
+        
+        guard let duckSound = SCNAudioSource(fileNamed: "quack.mp3") else {
+            sceneView.scene.rootNode.addChildNode(duckNode)
+            return
+        }
+        
+        let toQuack = SCNAction.playAudio(duckSound, waitForCompletion: true)
+        let jump = SCNAction.run { duck in
+            duck.physicsBody?.applyForce(SCNVector3.init(0, 1, 0), asImpulse: true)
+        }
+        let quackAction = SCNAction.group([toQuack, jump])
+        let notToQuack = SCNAction.wait(duration: 3)
+        let duckSequence = SCNAction.sequence([notToQuack, quackAction])
+        let foreverQuacking = SCNAction.repeatForever(duckSequence)
+        
         sceneView.scene.rootNode.addChildNode(duckNode)
+        duckNode.runAction(foreverQuacking)
     }
 }
 
