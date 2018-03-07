@@ -13,6 +13,7 @@ import ARKit
 class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
+    var patoAmount = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -136,6 +137,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         sceneView.scene.rootNode.addChildNode(duckNode)
         duckNode.runAction(foreverQuacking)
+        
+        self.patoAmount += 1
+        print(self.patoAmount)
     }
 }
 
